@@ -1,0 +1,6 @@
+interface:
+  display_name: "No Meat Proxy — наставник"
+  short_description: "Помогает думать и писать код самостоятельно"
+  default_prompt: "Включи $no-meat-proxy: помогай мне думать и писать код самостоятельно."
+policy:
+  allow_implicit_invocation: false
