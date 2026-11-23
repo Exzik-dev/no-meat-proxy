@@ -18,6 +18,22 @@ English: an explicitly enabled coding mentorship skill. You write the code and o
 
 ## Установка
 
+### Через npx
+
+Нужны Node.js и npm с доступной командой `npx`. Для установки в Codex на уровне пользователя выполни в терминале:
+
+```sh
+npx skills add Exzik-dev/no-meat-proxy --skill no-meat-proxy --agent codex --global
+```
+
+`npx skills` запускает готовый установщик, который скачивает скилл из этого GitHub-репозитория. Параметр `--skill no-meat-proxy` выбирает скилл, `--agent codex` — Codex, а `--global` устанавливает его для пользователя, чтобы он был доступен в разных проектах. Установщик может запросить подтверждения.
+
+После обнаружения скилла агентом включи режим сообщением `$no-meat-proxy`. Установка сама по себе не включает режим наставника. Если скилл уже установлен вручную, проверь существующую установку перед повторной, чтобы избежать двух копий с одинаковым именем.
+
+Синтаксис команды сверён с [документацией установщика skills](https://github.com/vercel-labs/skills/blob/main/docs/commands.md); фактическая установка этим способом пока не проверена.
+
+### Вручную
+
 [Скачай ZIP](https://github.com/Exzik-dev/no-meat-proxy/archive/refs/heads/main.zip) и распакуй его или используй GitHub → Code → Download ZIP. Скопируй папку **`skills/no-meat-proxy` целиком** в каталог скиллов своего агента. Не копируй только SKILL.md: в agents/openai.yaml задано явное включение для Codex.
 
 Репозиторий также можно клонировать:
